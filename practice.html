@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <link rel="stylesheet" href="practice.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+  <script src="https://kit.fontawesome.com/9f6aa87040.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">SWARAJ</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </header>
+
+    <div class="container">    <!-- slider -->
+   
+        <div class="list">  <!-- list -->
+
+            <div class="slide-container  ">   <!-- item --> <!-- active -->
+                <div class="slide"> 
+                    <div class="content">
+                        <h3>video slider 01</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Laboriosam soluta omnis vitae, veritatis commodi voluptatum est consequuntur, 
+                        at ipsa harum possimus ut ducimus nisi similique dignissimos ea necessitatibus amet. Odio.</p>
+                        <a href="#" class="btn">Learn more</a>    
+                    </div>
+                    <video autoplay muted loop>
+                        <source src="AdobeStock_209569183_Video_HD_Preview.mov" type="video/mp4">
+                    </video>   
+                </div>              
+            </div>
+    
+            <div class="slide-container active">
+                <div class="slide">
+                    <div class="content">
+                        <h3>video slider 01</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Laboriosam soluta omnis vitae, veritatis commodi voluptatum est consequuntur, 
+                        at ipsa harum possimus ut ducimus nisi similique dignissimos ea necessitatibus amet. Odio.</p>
+                        <a href="#" class="btn">Learn more</a>    
+                    </div>
+                    <video autoplay muted loop>
+                        <source src="My Video.mp4" type="video/mp4">
+                    </video>   
+                </div>              
+            </div>
+    
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <h3>Image slider 02</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Laboriosam soluta omnis vitae, veritatis commodi voluptatum est consequuntur, 
+                        at ipsa harum possimus ut ducimus nisi similique dignissimos ea necessitatibus amet. Odio.</p>
+                        <a href="#" class="btn">Learn more</a>    
+                    </div>
+                    <img src="img11.jpg" alt="img11">  
+                </div>              
+            </div>
+    
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <h3>Image slider 03</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Laboriosam soluta omnis vitae, veritatis commodi voluptatum est consequuntur, 
+                        at ipsa harum possimus ut ducimus nisi similique dignissimos ea necessitatibus amet. Odio.</p>
+                        <a href="#" class="btn">Learn more</a>    
+                    </div>
+                    <img src="img2.jpg" alt="img2">  
+                </div>              
+            </div>
+    
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <h3>Image slider 04</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Laboriosam soluta omnis vitae, veritatis commodi voluptatum est consequuntur, 
+                        at ipsa harum possimus ut ducimus nisi similique dignissimos ea necessitatibus amet. Odio.</p>
+                        <a href="#" class="btn">Learn more</a>    
+                    </div>
+                    <img src="img3.jpg" alt="img3">  
+                </div>              
+            </div>
+
+        </div>
+
+   <!-- buttons prev and next -->
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+   <!-- dots( if 5 items => 5 dot) -->
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+    </div>
+
+    <script src="app.js"></script>
+
+
+
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+
+       <!-- footer page -->
+
+       <footer>
+        <div class="footer_bar">
+            <h2>
+                <span>DON'T MISS A BRIEF. </span>SIGN UP FOR OUR DAILY EMAIL.
+            </h2>
+        </div>
+        <div class="footer_upper">
+                <div class="jnec">
+                    <h1>SWARAJ <br/>RISE</h1>
+                </div>
+                <div class="news">
+                    <h4 >News</h4>
+                    <ul>
+                        <li>SENATE</li>
+                        <li>HOUSE</li>
+                        <li>CAMPAIGN</li>
+                        <li>ADMINISTRATION</li>
+                        <li>REGULATION</li>
+                        <li>MEDIA</li>
+                        <li>BRIEFING ROOM</li>
+                        <li>LATINO</li>
+                        <li>12:30 REPORT</li>
+                        <li>CORONAVIRUS REPORT</li>
+                        <li>FLOOR ACTION</li>
+                        <li>IN THE KNOW</li>
+                        <li>SUNDAY TALK SHOWS</li>
+                        <li>MORE</li>
+
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Policy</h4>
+                    <ul>
+                        <li>DEFENSE</li>
+                        <li>ENERGY & ENVIRONMENT</li>
+                        <li>HEALTH CARE</li>
+                        <li>TECHNOLOGY</li>
+                        <li>INTERNATIONAL</li>
+                        <li>TRANSPORTATION</li>
+                        <li>CYBERSECURITY</li>
+                        <li>NATIONAL SECURITY</li>
+                        <li>SUSTAINABILITY</li>
+                        <li>MORE</li>
+                   
+                    </ul>
+                  </div>
+                  <div class="footer-links">
+                    <h4>Video</h4>
+                    <ul>
+                      <li>LATEST</li>
+                      <li>DEFENSE</li>
+                      <li>ENERGY & ENVIRONMENT</li>
+                      <li>HEALTHCARE</li>
+                      <li>TECHNOLOGY</li>
+                      <li>TRANSPORTATION</li>
+                      <li>INTERNATIONAL</li>
+                      <li>CYBERSECURITY</li>
+                      <li>NATIONAL SECURITY</li>
+                      <li>SUNDAY SHOWS</li>
+                      <li>MORE</li>
+ 
+                    </ul>
+                  </div>
+                  <div class="footer-links">
+                    <h4>Opinion</h4>
+                    <ul>
+                      <li>CONTRIBUTORS TO THE HILL</li>
+                      <li>COLUMNISTS</li>
+                      <li>CONGRESS BLOG</li>
+                      <li>MORE</li>
+               
+                    </ul>
+                  </div>
+           
+        </div>
+
+        <div class="footer_lower">
+            
+                
+                    <h2>Follow Us On</h2>
+
+                    <div class="top_contact">
+                      <div class="contact_way">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>Linkedin</h3>
+                      </div>
+                      <div class="contact_way">
+                        <i class="fa fa-twitter"></i>
+                        <h3>Twitter</h3>
+                      </div>
+                     
+                    </div>
+
+                    <div class="bottom_contact">
+                      <div class="contact_way">
+                        <i class="fab fa-github"></i>
+                        <h3>Github</h3>
+                      </div>
+                      <div class="contact_way">
+                        <i class="fa fa-mobile"></i>
+                        <h3>Mobile</h3>
+                      </div>
+                    </div>
+                    
+                
+            
+            </div>
+    </footer>
+
+
+    
+</body>
+</html>
